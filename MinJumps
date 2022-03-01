@@ -1,0 +1,31 @@
+class Solution:
+	def minJumps(self, arr, n):
+	    #code here
+	    if(arr[0]<1):
+	        return -1
+        else:
+	        jump=0
+	        maxr=arr[0]
+	        pos=0
+	        while n>0: #X
+	            t=arr[pos]
+	            if t>=n:
+	                jump=jump+1
+	                break
+	            while t:
+	                if arr[t+pos]>maxr: #X
+	                    maxr=arr[t+pos] #X if arr[pos]>(maxr+t)_instance
+	                    pos=t+pos 
+                    t=t-1
+                jump=jump+1
+                n=n-pos #X
+            return jump
+
+if __name__ == '__main__':
+	T=int(input())
+	for i in range(T):
+		n = int(input())
+		Arr = [int(x) for x in input().split()]
+		ob = Solution()
+		ans = ob.minJumps(Arr,n)
+		print(ans)
