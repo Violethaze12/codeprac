@@ -14,8 +14,8 @@ class Solution:
                     break
                 c=0
                 for i in range(1,arr[tpos]+1):
-                    if arr[tpos+i]>maxr: #X
-                        maxr=arr[tpos+i] #X if arr[pos]>(maxr+t)_instance
+                    if tpos+i+arr[tpos+i]>maxr: #X
+                        maxr=tpos+i+arr[tpos+i] #X if arr[pos]>(maxr+t)_instance
                         pos=tpos+i
                         c=1
                 if c==0:
@@ -59,8 +59,8 @@ else:
         c=0
         for i in range(1,arr[tpos]+1):
             print('2nd loop i=',i)
-            if arr[tpos+i]>maxr: #X
-                maxr=arr[tpos+i] #X if arr[pos]>(maxr+t)_instance
+            if tpos+i+arr[tpos+i]>maxr: #X
+                maxr=tpos+i+arr[tpos+i] #X if arr[pos]>(maxr+t)_instance
                 pos=tpos+i
                 print('If condition true: maxr=',maxr,' pos=',pos,'tpos=',tpos)
                 c=1
