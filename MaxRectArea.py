@@ -17,4 +17,11 @@ if __name__ == '__main__':
             A.append(line)
         print(Solution().maxArea(A, R, C)) 
 	
-#https://practice.geeksforgeeks.org/problems/max-rectangle/1
+#Problem: https://practice.geeksforgeeks.org/problems/max-rectangle/1
+#https://www.geeksforgeeks.org/largest-rectangle-under-histogram/
+#https://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/
+#https://www.geeksforgeeks.org/maximum-size-rectangle-binary-sub-matrix-1s/
+#https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
+
+
+
